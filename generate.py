@@ -1,7 +1,7 @@
 from eth_account import Account
 import secrets
 from etherscan import Etherscan
-eth = Etherscan("KKRW7D1SQKAG2KNEBZA4XNR68H9MWYNMIB")
+eth = Etherscan("API")
 import json
 import pprint
 import time
