@@ -35,3 +35,4 @@ The second domain optimization is regarding the phenomena of two private keys sh
 - [Two private keys --> one address](https://ethereum.stackexchange.com/questions/10055/is-each-ethereum-address-shared-by-theoretically-2-96-private-keys)
 - [Week random source for ECDSA](https://web.archive.org/web/20160308014317/http://www.nilsschneider.net/2013/01/28/recovering-bitcoin-private-keys.html)
 - [Python Resource](https://www.arthurkoziel.com/generating-ethereum-addresses-in-python/)
+- [van Oorschot–Wiener parallel collision search machine](http://people.scs.carleton.ca/~paulv/papers/JoC97.pdf)
