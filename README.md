@@ -1,10 +1,16 @@
-# Hash Collisions
+# Hash Collisions in Distributed ledgers
 
-Probabilistically exploring hash collisions in vanity wallets on Ethereum.
+This program generates a public private key pair, a wallet address, and checks the fund of the wallet. The program does this continuesly at a rate of about 5 checks per second, probabilistically exploring hash collisions on Ethereum. The program performs the checks through the Etherscan API.
 
-I wrote a program to generate random Private keys, the corresponding public keys, and the hashed wallet addresses. 
+## Cryptogrpahy in distributed ledgers
 
-The program then checks the wallet balance of the generated key pair through the Etherscan API.
+Distributed ledgers all have one thing in common: Their utilization of assymetric cryptography.
+
+Any individual participating in a decentralized protocol has to have a crypto wallet to do so. A crypto wallet is essentially a public private key pair but instead of the wwallet address being the public key, it is a hashed public key. The public and private key pairs are 256 bits and the public key is created from the private key using the Elliptic Curve Encryption System. The public key (256 bits) is then hashed to a 160 bit walllet address. 
+
+When you are authorizing transactions, you want to prove that you are the owner of the private key corresponding to funds in the wallet. This is done using a Digital Signature Algorithm. When a user authorizes a transaction, they prove that the user is the owner of the private key corresponding to the public key’s funds. Because of the mathematical relationship between the public and private keys, users can sign a transaction with their private key, creating a digital signature. A digital signature reveals no information about the private key but can be verified with the corresponding public key. Thus proof can be constructed.
+
+## Back of the Napkin Math
 
 The keyspace is 2^160. The Etherscan API only accepts five queries per second with a maximum of three free API keys per account. A single account can query 15 keys per second and about 1,296,000 a day.
 This barely puts a dent in the keyspace as 1,296,000/2^160 is around 0.0000000000000000000000000000000000000000008 of the total keyspace.
