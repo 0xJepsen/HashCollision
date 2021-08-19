@@ -19,7 +19,7 @@ While searching the entire keyspace would be a fruitless endeavor, there are fou
 
 Currently, the computational restriction is the use of Etherscans API. To eliminate the requirement of this API, one could run a full Ethereum node locally. While this will require some hardware, it will allow us to query the entire blockchain data locally rather than through the API. This will also allow multiple instances of the searcher program to run and check against the local Blockchain data. 
 
-The Second computational optimization is in regards to programmatic optimization. Python, an interpreted language, is not as fast as a precompiled language low-level language like C, Rust, or Go. Utilizing these languages to implement the Van Oorschot-Wiener parallel Collision search, would result in a significant speedup.
+The Second computational optimization is in regards to programmatic optimization. Python, an interpreted language, is not as fast as a precompiled language low-level language like C, Rust, or Go. Utilizing these languages to implement the Van Oorschot-Wiener parallel Collision search, would result in a significant speedup. With this method the expected number of inputs to be tried in order for a collision to be found is is k = sqrt((pi*n)/2). For our n = 2^160, k = 1.5151638e+24. If you search 1,296,000 a day (which we should do better) than is would take 1.2063406e+18 days. However these calculations are the probability of calculating a single collision in the entire key space, while we are just search for any of aa given 1,000,000 collisions. Does the birthday paradox apply here?
 
 ## Domain Abstraction Optimizations
 
