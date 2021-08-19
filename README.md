@@ -30,6 +30,7 @@ The second domain optimization is regarding the phenomena of two private keys sh
 ## Resources
 
 - [Efficient Ethereum Addresses](https://medium.com/coinmonks/on-efficient-ethereum-addresses-3fef0596e263)
+- [Pigon Hole Principle proof of two private keys to one addresss](https://crypto.stackexchange.com/questions/72741/what-is-the-possibility-of-collision-of-trailing-160-bits-of-keccak-256-for-any/72753#72753)
 - [Vanity Wallet Generator JavaScript](https://github.com/MyEtherWallet/VanityEth)
 - [Two private keys --> one address](https://ethereum.stackexchange.com/questions/10055/is-each-ethereum-address-shared-by-theoretically-2-96-private-keys)
 - [Week random source for ECDSA](https://web.archive.org/web/20160308014317/http://www.nilsschneider.net/2013/01/28/recovering-bitcoin-private-keys.html)
