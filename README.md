@@ -19,7 +19,7 @@ While searching the entire keyspace would be a fruitless endeavor, there are fou
 
 Currently, the computational restriction is the use of Etherscans API. To eliminate the requirement of this API, one could run a full Ethereum node locally. While this will require some hardware, it will allow us to query the entire blockchain data locally rather than through the API. This will also allow multiple instances of the searcher program to run and check against the local Blockchain data. 
 
-The Second computational optimization is in regards to programmatic optimization. Python, an interpreted language, is not as fast as a precompiled language low-level language like C, Rust, or Go. Utilizing these languages and process optimization, large magnitudes of improvement could be made. 
+The Second computational optimization is in regards to programmatic optimization. Python, an interpreted language, is not as fast as a precompiled language low-level language like C, Rust, or Go. Utilizing these languages to implement the Van Oorschot-Wiener parallel Collision search, would result in a significant speedup.
 
 ## Domain Abstraction Optimizations
 
