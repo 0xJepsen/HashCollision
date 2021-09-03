@@ -36,8 +36,11 @@ The second domain optimization is regarding the phenomena of two private keys sh
 ## Run the program
 
 -```pip install secrets```
+
 -```pip install etherscan-python```
+
 -```pip install etherium```
+
 -```python generator.py```
 
 ## Collaboration
