@@ -33,6 +33,13 @@ Wallets with leading 0s produce lower transaction fees for related transactions.
 
 The second domain optimization is regarding the phenomena of two private keys sharing an address. I still need to look further into this. This could theoretically reduce the search space by a significant amount. 
 
+## Run the program
+
+-```pip install secrets```
+-```pip install etherscan-python```
+-```pip install etherium```
+-```python generator.py```
+
 ## Collaboration
 
 If anyone wants to collaborate on any of these reasearch endeavors please reach out to me. Information availible on my github page
