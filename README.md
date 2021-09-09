@@ -31,7 +31,7 @@ The Second computational optimization is in regards to programmatic optimization
 
 Wallets with leading 0s produce lower transaction fees for related transactions. In short, this is because an address with leading zeros takes up less memory on the distributed network. As a result, there is a high demand for these "Vanity wallets" with leading zeros. If we can restrict the searched domain for wallets with leading zeros in their addresses, this could significantly reduce the search space. 
 
-The second domain optimization is regarding the phenomena of two private keys sharing an address. I still need to look further into this. This could theoretically reduce the search space by a significant amount. 
+The second domain optimization is regarding the phenomena of two private keys sharing an address. Because private/public keys are 256 bits and addresses are 160 bits, by the pigeon hole principle there exists multiple private/public key pairs that share an address. 
 
 ## Run the program
 
