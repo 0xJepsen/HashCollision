@@ -4,7 +4,7 @@ This is a Golang version of 0xJepsen's Python Hash Collision program.
 
 ## Running the program
 
-`git clone github.com/0xJepsen/HashCollision`
+`git clone https://github.com/0xJepsen/HashCollision`
 
 `cd go`
 
