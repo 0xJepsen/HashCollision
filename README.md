@@ -1,6 +1,6 @@
 # Hash Collisions in Distributed ledgers
 
-This program generates a public private key pair, a wallet address, and checks the fund of the wallet. The program does this continuesly at a rate of about 5 checks per second, probabilistically exploring hash collisions on Ethereum. The program performs the checks through the Etherscan API.
+This program is a proof of concept that generates a public private key pair, a wallet address, and checks the fund of the wallet. The program does this continuesly at a rate of about 5 checks per second, probabilistically exploring hash collisions on Ethereum. The program performs the checks through the Etherscan API.
 
 ## Cryptogrpahy in distributed ledgers
 
@@ -17,7 +17,7 @@ This barely puts a dent in the keyspace as 1,296,000/2^160 is around 0.000000000
 
 As of August 2021, there are a little under 1,000,000 active Ethereum wallets with Eth or Eth-based tokens in them. Some of these may be smart contracts, some of these may be lost wallets. 1,000,000/(2^160) is about 0.0000000000000000000000000000000000000000006. Multiplied by the number of searches a day 1,296,000 is about 0.00000000000000000000000000000000000008, which is about ten magnitudes greater than searching the whole keyspace.
 
-## Potential Optimizations
+# Potential Optimizations
 
 While searching the entire keyspace would be a fruitless endeavor, there are four optimizations to propose for this research to be worthwhile. There are two domain abstractions and two computational optimizations that worthwhile
 
