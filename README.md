@@ -33,6 +33,10 @@ Wallets with leading 0s produce lower transaction fees for related transactions.
 
 The second domain optimization is regarding the phenomena of two private keys sharing an address. Because private/public keys are 256 bits and addresses are 160 bits, by the pigeon hole principle there exists multiple private/public key pairs that share an address. 
 
+## Meeting Notes
+
+Need to find distributin of Keccak256
+
 ## Run the program
 
 -```pip install secrets```
